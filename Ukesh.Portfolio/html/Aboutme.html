@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/AboutStyles.css" />
+
+    <!-- box icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  
+
+    <Section class="Aboutme">
+        <div id="above">
+            <div class="container">
+              <div class="row">
+                <div class="about-colo-1">
+                  <img src="../images/UkeshCoat.png" alt="">
+                </div>
+                <div class="about-colo-2">
+
+                <div class="fix">
+                  <h1 class="sub-title">About<span id="span">Me</span></h1>
+                  
+                  <p class="One">A Recent college graduate seeking an entry-level position in the field of Java Full-Stack development. Possesses a strong academic record, having graduated with honors, 
+                    eager to put my skills to work in a professional setting. Gained valuable experience through internships and volunteer work.
+                  </p>
+        
+                  <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                    <p class="tab-links" onclick="opentab('educations')">Education</p>
+                  </div>
+        
+                </div>
+                  <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                      <li><span>Java</span><br>Object-Oriented Programming (OOP) Concepts, Data Structures and Algorithms, Exception Handling, Multi-threading, File Handling, Collections Framework, 
+                        Java with JDBC, Database Connectivity, CRUD Operations with MySQL, Servlets,JSP</li>
+                      <li><span>Python</span><br>Syntax and Data Types, Basic Control Structures (Loops, Conditionals), Functions and Modules, Basic File Handling</li>
+                      <li><span>SQL</span><br>Designing Web/app interfaces</li>
+                      <li><span>HTMl & CSS</span><br>Semantic HTML, Responsive Design with CSS Flexbox and Grid, CSS Animations and Transitions</li>
+                      <li><span>Java Script</span><br>DOM Manipulation, Event Handling, Asynchronous Programming (Promises, Async/Await), Basic JavaScript Libraries (e.g., jQuery)</li>
+                    </ul>
+                  </div>
+        
+                  <div class="tab-contents" id="certifications">
+                    <ul>
+                      <li><span>JAVA Full Stack Development</span><br>Certification from : Qspyder, Chennai<br>Certification code: ONGOING</li>
+                      <li><span>SQL Certification</span><br>Certification from : SimpliLearn | SkillUp<br>Certification code: 6251959</li>
+                      <li><span>Python Certification</span><br>Certification from : SimpliLearn | SkillUp<br>Certification code: 6281304</li>
+
+                    </ul>
+                  </div>
+        
+                  <div class="tab-contents" id="educations">
+                    <ul>
+                      <li><span>SSLC</span><br>Sri Krishnaswamy Matriculation Higher Sec School<br>2017-18</li>
+                      <li><span>HSC</span><br>Sri Krishnaswamy Matriculation Higher Sec School<br>2019-20</li>
+                      <li><span>B.Tech Leather</span><br>Anna University - ACT campus<br>2020-24</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+    </Section>
+
+       <footer>
+        <div class="footer-iconTop">
+            <a href="../html/index.html"><i title="Home" class='bx bx-arrow-back'></i></a>
+          </div>
+        </footer>
+
+    
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+      
+        function opentab(tabname){
+          for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+          }
+          for(tablink of tabcontents){
+            tablink.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
+        }
+      
+      </script>
+
+</body>
+</html>
